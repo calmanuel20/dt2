@@ -36,7 +36,6 @@
   gap: 10px;
 }
 
-.answer-list-btn,
 .share-btn,
 .admin-btn,
 .submit-question-btn {
@@ -51,7 +50,6 @@
   font-weight: 600;
 }
 
-.answer-list-btn:hover,
 .share-btn:hover,
 .admin-btn:hover,
 .submit-question-btn:hover {
@@ -61,7 +59,6 @@
   box-shadow: 0 4px 12px rgba(108, 99, 255, 0.3);
 }
 
-.answer-list-btn,
 .admin-btn,
 .submit-question-btn {
   font-size: 1.5rem;
@@ -161,6 +158,34 @@
   align-items: flex-start;
 }
 
+.input-with-answers-btn {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.answer-list-btn-inline {
+  background: #2a2a2a;
+  color: #fff;
+  border: 2px solid #444;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.answer-list-btn-inline:hover {
+  background: #3a3a3a;
+  border-color: #6c63ff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(108, 99, 255, 0.3);
+}
+
 .submit-btn {
   padding: 15px 30px;
   background: #6c63ff;
@@ -192,7 +217,7 @@
 
 .answer-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 12px;
 }
 
@@ -348,7 +373,6 @@
     gap: 8px;
   }
 
-  .answer-list-btn,
   .share-btn,
   .admin-btn,
   .submit-question-btn {
@@ -368,6 +392,15 @@
 
   .input-section {
     flex-direction: column;
+  }
+
+  .input-with-answers-btn {
+    flex-direction: column;
+  }
+
+  .answer-list-btn-inline {
+    width: 100%;
+    padding: 12px;
   }
 
   .submit-btn {
@@ -426,7 +459,6 @@
     font-size: 1.1rem;
   }
 
-  .answer-list-btn,
   .share-btn,
   .admin-btn,
   .submit-question-btn {
